@@ -1,0 +1,23 @@
+# Credentials and key material — never commit these
+*.p12
+*.pfx
+*.key
+private.key
+cert.pem
+ca-bundle.pem
+ca-bundle.cer
+pw.txt
+
+# Configuration profiles: signed profiles embed your certificate chain,
+# and unsigned ones may still contain personal data. If you want to ship
+# an example profile, whitelist it explicitly, for example:
+#   !examples/unsigned-example.mobileconfig
+*.mobileconfig
+
+# macOS
+.DS_Store
+._*
+
+# Editor and OS noise
+*.swp
+*~
